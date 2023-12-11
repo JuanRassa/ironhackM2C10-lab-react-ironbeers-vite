@@ -26,14 +26,21 @@ function AllBeersPage() {
 
   return (
     <>
-      <h2>See All Beers</h2>
+      <h2 className='pageTitle'>See All Beers</h2>
       <div className='allBeers_container'>
         {allBeers.length === 0 && <img src={LoaderBeer} alt='Loader Beer' />}
         {allBeers.length > 0 && (
           <>
             {allBeers.map(beer => (
-              <Link key={beer.id} to=''>
-                {beer.name}
+              <Link key={beer._id} to={`/beers/${beer._id}`} className='beerCard'>
+                <div className='beerCard_imgCont'>
+                  <img src={beer.image_url} alt='' />
+                </div>
+                <div className='beerCard_infoCont'>
+                  <h3>{beer.name}</h3>
+                  <p>{beer.tagline}</p>
+                  <p>{beer.contributed_by}</p>
+                </div>
               </Link>
             ))}
           </>
