@@ -1,8 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #fbfbe9;
 }
-
+* {
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+}
 a {
   text-decoration: none !important;
 }
@@ -11,11 +15,99 @@ form {
   max-width: 400px;
   margin: 20px auto;
 }
-
+h1 {
+  text-align: center;
+  color: #008080;
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  text-align: center;
+  color: #008080;
+  font-size: 2rem;
+  font-weight: 700;
+}
 .search-bar {
   margin-bottom: 50px;
 }
 
 .btn-round {
   margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #008080;
+  height: 100px;
+  border-bottom: 2px solid #000;
+}
+nav button {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .link.active button {
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+.homeCards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.homeCard {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-color: #008080;
+  max-width: 300px;
+  padding: 10px;
+  box-shadow: 15px 15px 20px 0px black;
+  transition: all 0.3s ease-in-out;
+  color: #fbfbe9;
+  opacity: 0.8;
+}
+.homeCard:hover {
+  transform: translate3d(-10px, -10px, 100px);
+  box-shadow: 25px 25px 30px 10px black;
+  border: 3px solid #fbfbe9;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.homeCard:visited {
+  color: #fbfbe9;
+}
+.homeCard img {
+  scale: 0.6;
+  width: 100%;
+  border-radius: 150px;
+  transition: all 0.3s ease-in-out;
+}
+.homeCard:hover img {
+  scale: 1;
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+.homeCard p {
+  text-align: justify;
+}
+
+.allBeers_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.allBeers_container img {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 50px;
 }
