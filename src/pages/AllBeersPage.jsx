@@ -39,7 +39,7 @@ function AllBeersPage() {
                 <div className='beerCard_infoCont'>
                   <h3>{beer.name}</h3>
                   <p>{beer.tagline}</p>
-                  <p>{beer.contributed_by}</p>
+                  <p>Created by: {beer.contributed_by}</p>
                 </div>
               </Link>
             ))}
