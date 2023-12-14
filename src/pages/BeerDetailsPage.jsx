@@ -24,7 +24,7 @@ function BeerDetailsPage() {
 
   return (
     <>
-      <h2>BeerDetailsPage</h2>
+      <h2 className='pageTitle'>BeerDetailsPage</h2>
       {beerData && (
         <div>
           <div>
