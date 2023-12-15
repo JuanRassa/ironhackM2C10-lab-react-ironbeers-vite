@@ -26,22 +26,22 @@ function BeerDetailsPage() {
     <>
       <h2 className='pageTitle'>BeerDetailsPage</h2>
       {beerData && (
-        <div>
-          <div>
+        <div className='beerDetails'>
+          <div className='beerImageCont'>
             <img src={beerData.image_url} alt={beerData.name} />
           </div>
-          <div>
+          <div className='name-attenuationCont'>
             <p>{beerData.name}</p>
             <p>{beerData.attenuation_level}</p>
           </div>
-          <div>
+          <div className='tagline-firstCont'>
             <p>{beerData.tagline}</p>
             <p>{beerData.first_brewed}</p>
           </div>
-          <div>
+          <div className='descriptionCont'>
             <p>{beerData.description}</p>
           </div>
-          <div>
+          <div className='contributedCont'>
             <p>{beerData.contributed_by}</p>
           </div>
         </div>

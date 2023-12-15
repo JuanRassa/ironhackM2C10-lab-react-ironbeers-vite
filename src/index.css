@@ -12,7 +12,7 @@ a {
 }
 
 form {
-  max-width: 400px;
+  max-width: 700px;
   margin: 20px auto;
 }
 h1 {
@@ -132,7 +132,7 @@ nav .link.active button {
 .beerCard:hover {
   transform: translate3d(-10px, -10px, 100px);
   border: 4px double gold;
-  box-shadow: 25px 25px 30px 10px gold;
+  box-shadow: 25px 25px 30px 10px black;
 }
 .beerCard_imgCont {
   width: 100px;
@@ -165,4 +165,80 @@ nav .link.active button {
 }
 .beerCard_infoCont p:nth-child(3) {
   font-size: 0.875rem;
+}
+
+.beerDetails {
+  border-radius: 8px;
+  border: 1px solid #008080;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beerDetails p {
+}
+.beerImageCont {
+  height: 300px;
+}
+.beerImageCont img {
+  height: 100%;
+}
+.name-attenuationCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tagline-firstCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.descriptionCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contributedCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+form label {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+form input {
+  height: 36px;
+  border-radius: 8px;
+}
+form button {
+  width: 46%;
+  margin: 0 auto;
+  display: block;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #fbfbe9;
+  border: 1px solid #008080;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #008080;
+  color: #fff;
 }
