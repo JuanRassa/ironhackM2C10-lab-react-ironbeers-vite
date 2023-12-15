@@ -23,6 +23,13 @@ function AddBeerPage() {
     try {
       const response = await axios.post(`https://ih-beers-api2.herokuapp.com/beers/new`, newBeerData);
       console.log(response);
+      setName('');
+      setTagline('');
+      setDescription('');
+      setFirst_brewed('');
+      setBrewers_tip('');
+      setAttenuation_level(0);
+      setContributed_by('');
     } catch (error) {
       console.log(error);
     }
